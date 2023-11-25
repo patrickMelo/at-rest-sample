@@ -1,6 +1,6 @@
 # PHP-at-REST Sample App
 
-This is a sample app for the (PHP-at-REST framework).
+This is a sample app for the [PHP-at-REST framework](https://github.com/patrickMelo/at-rest/).
 
 It contains login, password recovery, dashboard, user management and profile pages.
 
