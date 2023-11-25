@@ -1,0 +1,73 @@
+.dashboardBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 64px;
+    padding: 8px;
+    background-color: colors_blue;
+}
+
+.dashboardBarContainer {
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.dashboardBar .rightContainer {
+    float: right;
+}
+
+.dashboardBar .leftContainer {
+    float: left;
+}
+
+.dashboardBar .leftContainer>*,
+.dashboardBar .rightContainer>* {
+    float: left;
+    height: 48px;
+    line-height: 48px;
+    margin: 0;
+}
+
+.dashboardBar .leftContainer>* {
+    margin-right: 20px;
+}
+
+.dashboardBar .rightContainer>* {
+    margin-left: 20px;
+}
+
+.dashboardBar button {
+    padding: 0 1em;
+    cursor: pointer;
+    background: colors_blue;
+}
+
+.dashboardBar button:hover {
+    background-color: white;
+    color: colors_black;
+}
+
+.dashboardPage .helloText {
+    text-align: center;
+}
+
+.profileForm {
+    margin-bottom: 40px;
+}
+
+.wuPageSelectorContainer {
+    text-align: center;
+    padding: 20px;
+}
+
+.wuPageSelectorContainer button {
+    margin: 0 5px;
+    width: 40px;
+}
+
+@media print {
+    .dashboardBar {
+        display: none;
+    }
+}

@@ -1,0 +1,220 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+@vars colors {
+	black: #0f3648;
+	blue: #0f3648;
+	white: #fff;
+	green: #72bf44;
+	light_green: #31b089;
+	light_gray: #eee;
+	gray: #ccc;
+	offwhite: #f4f4f4;
+}
+
+#wuRoot {
+	max-width: 1366px;
+	margin: 0 auto;
+}
+
+.wuGlobalMessageContainer {
+	position: fixed;
+	top: calc(96px + 4rem);
+	left: 80%;
+	right: 2rem;
+	z-index: 9000;
+}
+
+.wuGlobalMessage {
+	display: block;
+	text-align: center;
+	border-radius: 4px 0 4px 4px;
+	border: 1px solid colors_blue;
+	transition: all 0.2s linear;
+	padding: 1em;
+	background: colors_white;
+	color: colors_blue;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.wuGlobalMessage.hidden {
+	opacity: 0;
+	pointer-events: none;
+	height: 0;
+	padding: 0;
+}
+
+@keyframes wuLoadIndicatorSpin {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.wuLoadIndicator {
+	position: fixed;
+	top: calc(64px + 2rem);
+	right: 2rem;
+	width: 32px;
+	height: 32px;
+	background: colors_green;
+	z-index: 10000;
+	border-radius: 8px;
+	animation: wuLoadIndicatorSpin 1s infinite linear;
+	opacity: 0;
+	pointer-events: none;
+	transition: all 0.2s linear;
+}
+
+.wuLoadIndicator.visible {
+	opacity: 1;
+}
+
+.wuPage {
+	padding-top: 60px;
+}

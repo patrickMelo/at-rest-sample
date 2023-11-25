@@ -1,0 +1,37 @@
+<!-- Template: wuForm -->
+<form class="wuForm {className}" action="#" method="post"></form>
+<!-- End -->
+
+<!-- Template: wuButton -->
+<button class="wuButton {className}">{caption}</button>
+<!-- End -->
+
+<!-- Template: wuTextInput -->
+<div class="wuInputContainer">
+    <input type="text" name="{name}" class="wuTextInput {className}" placeholder="{placeholder}" value="{value}"
+        data-regex="{regex}" data-match="{match}" />
+    <span class="wuMessage">{invalidMessage}</span>
+</div>
+<!-- End -->
+
+<!-- Template: wuPasswordInput -->
+<div class="wuInputContainer">
+    <input type="password" name="{name}" class="wuPasswordInput {className}" placeholder="{placeholder}"
+        data-regex="{regex}" data-match="{match}" />
+    <span class="wuMessage">{invalidMessage}</span>
+</div>
+<!-- End -->
+
+<!-- Template: wuCheckbox -->
+<div class="wuInputContainer wuCheckboxContainer">
+    <input type="checkbox" id="wuCheckbox{name}" name="{name}" class="wuCheckboxInput {className}" {checked} />
+    <label for="wuCheckbox{name}">{label}</label>
+</div>
+<!-- End -->
+
+<!-- Template: wuSelect -->
+<div class="wuInputContainer">
+    <select name="{name}" class="wuSelect {className}"></select>
+    <span class="wuMessage">{invalidMessage}</span>
+</div>
+<!-- End -->

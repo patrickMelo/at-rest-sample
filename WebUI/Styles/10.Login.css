@@ -1,0 +1,32 @@
+.loginPage,
+.recoverPasswordPage,
+.recoverPasswordPageStep2,
+.profilePage {
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.loginForm input,
+.loginForm button,
+.recoverPasswordForm input,
+.recoverPasswordForm button,
+.recoverPasswordFormStep2 input,
+.recoverPasswordFormStep2 button,
+.profilePage input,
+.profilePage button {
+    display: block;
+    width: 100%;
+}
+
+.loginForm .recoverPassword {
+    float: right;
+}
+
+.loginPage .logoImage,
+.recoverPasswordPage .logoImage,
+.recoverPasswordPageStep2 .logoImage {
+    display: block;
+    width: 80%;
+    max-width: 280px;
+    margin: 0 auto 40px;
+}

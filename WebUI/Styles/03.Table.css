@@ -1,0 +1,31 @@
+.wuTable {
+    width: 100%;
+}
+
+.wuTable .wuHead,
+.wuTable .wuFoot {
+    font-weight: bold;
+    text-align: left;
+    background: colors_blue;
+}
+
+.wuTable .wuHead input,
+.wuTable .wuFoot input {
+    font-weight: bold;
+}
+
+.wuTable .wuHead .wuCell,
+.wuTable .wuFoot .wuCell {
+    color: colors_white;
+    border-color: colors_blue;
+}
+
+.wuTable .wuCell {
+    padding: 8px;
+    border: 1px solid colors_light_gray;
+    vertical-align: middle;
+}
+
+.wuTable .wuBody .wuRow:hover .wuCell {
+    background-color: colors_light_gray;
+}

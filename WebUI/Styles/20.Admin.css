@@ -1,0 +1,107 @@
+.adminDashboardPage {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.reportsContainer {
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.informationBoxContainerOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.75);
+    opacity: 0;
+    pointer-events: none;
+    transition: ease 0.2s all;
+}
+
+.informationBoxContainerOverlay.visible {
+    opacity: 1;
+    pointer-events: initial;
+}
+
+.informationBoxContainer {
+    position: relative;
+    background: colors_white;
+    padding: 20px 25px;
+    margin: -200px auto 0;
+    min-width: 320px;
+    max-width: 480px;
+    border-radius: 4px 0 4px 4px;
+    transition: ease 0.2s all;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.informationBoxContainerOverlay.visible .informationBoxContainer {
+    margin-top: 100px;
+}
+
+.informationBoxContainer input[type="text"],
+.informationBoxContainer input[type="password"],
+.informationBoxContainer select,
+.informationBoxContainer button,
+.reportsContainer input[type="text"],
+.reportsContainer input[type="password"],
+.reportsContainer select,
+.reportsContainer button {
+    display: block;
+    width: 100%;
+}
+
+.informationBoxContainer .closeButton {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    line-height: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+button.addRecord {
+    float: right;
+    margin-top: -6.6rem;
+}
+
+.reportsViewContainer {
+    margin-bottom: 60px;
+}
+
+.reportsViewContainer .clientName,
+.reportsViewContainer .professionalName {
+    font-size: 1.8rem;
+}
+
+.reportsViewContainer .clientName em,
+.reportsViewContainer .professionalName em {
+    font-size: 1.6rem;
+    float: right;
+}
+
+.reportsViewContainer .clientTable,
+.reportsViewContainer .reportDetails {
+    margin-bottom: 40px;
+}
+
+.filtersContainer .wuInputContainer {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.reportsViewContainer .reportDetails th,
+.reportsViewContainer .reportDetails td {
+    text-align: center;
+}
+
+.reportsViewContainer .reportDetails .weekend {
+    background: colors_offwhite;
+}
